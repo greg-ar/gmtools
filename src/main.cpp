@@ -1,7 +1,11 @@
 #include <iostream>
+#include <gtkmm.h>
 
-int main() {
-	std::cout << "Hello World\n";
+#include "window.h"
 
-	return 0;
+int main(int argc, char* argv[])
+{
+  auto app = Gtk::Application::create("dev.gregar.gmtools");
+
+  return app->make_window_and_run<MyWindow>(argc, argv);
 }

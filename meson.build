@@ -6,6 +6,5 @@ project('gregsgmtools', ['cpp', 'c'],
 
 
 
-
 subdir('src')
 
